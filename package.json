@@ -14,10 +14,13 @@
     "build": "node build/build.js"
   },
   "dependencies": {
+    "_comment": "此处是运行环境依赖，部署后运行仍需要依赖",
+    "echarts": "^3.8.5",
     "vue": "^2.5.2",
     "vue-router": "^3.0.1"
   },
   "devDependencies": {
+    "_comment": "此处是开发环境依赖，只有开发环境用到",
     "autoprefixer": "^7.1.2",
     "babel-core": "^6.22.1",
     "babel-eslint": "^7.1.1",
