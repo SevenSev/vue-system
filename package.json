@@ -17,6 +17,7 @@
     "_comment": "此处是运行环境依赖，部署后运行仍需要依赖",
     "echarts": "^3.8.5",
     "vue": "^2.5.2",
+    "vue-resource": "^1.3.5",
     "vue-router": "^3.0.1"
   },
   "devDependencies": {
