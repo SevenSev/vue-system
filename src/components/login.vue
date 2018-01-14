@@ -9,12 +9,12 @@
 			</div>
 			<form>
 				<div class="login-input login-username">
-					<img src="../images/user.png" height="20" width="20" alt="暂时无法显示">
+					<svg-icon  name="user" class="svgIcon"></svg-icon>
 					<input type="text" name="username" placeholder="用户名" autocomplete="on" 
 					v-model="username">
 				</div>
 				<div class="login-input login-password">
-					<img src="../images/lock.png" height="20" width="20" alt="暂时无法显示">
+					<svg-icon  name="lock" class="svgIcon"></svg-icon>
 					<input type="password" name="password" placeholder="密码" 
 					v-model="password">
 				</div>	
@@ -68,7 +68,8 @@
 		height:100%;
 		background-color:#2d3a4b;
 		position:relative;
-	}
+		text-align:center;
+	}	
 
 	.login-content{
 		width:400px;
@@ -91,9 +92,7 @@
 		margin:0 auto;
 		background-color:#1f2733;
 		line-height:54px;
-	}
-	.login-input img{
-		vertical-align:-4px;
+		border-radius:5px;
 	}
 
 	.login-input input{
@@ -119,10 +118,15 @@
 		color:#fff;
 		margin-top:20px;
 		border:none;
+		border-radius:5px;
 	}
 	.login-button:hover{
 		cursor:pointer;
 		opacity:0.8;
 	}
-
+	.login-container .svgIcon{
+		width:18px;
+		height:18px;
+		vertical-align: -3px;
+	}
 </style>

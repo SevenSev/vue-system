@@ -4,31 +4,31 @@
 <template>
 	<div class="side-wrapper">
 		<ul class="ul-wrapper">
-			<el-menu default-active="1" class="el-menu-vertical-demo" background-color="#304156" text-color="#fff" active-text-color="#ffd04b">
+			<el-menu    :unique-opened="uniqueOpened"  default-active="1" class="el-menu-vertical-demo" background-color="#304156" text-color="#fff" active-text-color="#ffd04b">
 				<router-link to="/homepage">
 					<el-menu-item index="1">
-						<i class="el-icon-menu"></i>
+						<svg-icon  name="home" class="svgIcon"></svg-icon>
 						<span>首页</span>
 					</el-menu-item>					
 				</router-link>
 
 				<router-link to="/file">
 					<el-menu-item index="2">
-						<i class="el-icon-menu"></i>
+						<svg-icon  name="document" class="svgIcon"></svg-icon>
 						<span>文档</span>
 					</el-menu-item>
 				</router-link>
 
 				<router-link to="/form">
 					<el-menu-item index="3">
-						<i class="el-icon-menu"></i>
+						<svg-icon  name="form" class="svgIcon"></svg-icon>
 						<span>表单</span>
 					</el-menu-item>
 				</router-link>
 				
 				<el-submenu index="4">
 					<template slot="title">
-						<i class="el-icon-menu"></i>
+						<svg-icon  name="component" class="svgIcon"></svg-icon>
 						<span>组件</span>
 					</template>
 					<router-link to="/component">
@@ -53,21 +53,21 @@
 				
 				<router-link to="/icon">
 					<el-menu-item index="5">
-						<i class="el-icon-menu"></i>
+						<svg-icon  name="icon" class="svgIcon"></svg-icon>
 						<span>图标</span>
 					</el-menu-item>
 				</router-link>
 				
 				<router-link to="/zip">
 					<el-menu-item index="6">
-						<i class="el-icon-menu"></i>
+						<svg-icon  name="zip" class="svgIcon"></svg-icon>
 						<span>ZIP</span>
 					</el-menu-item>
 				</router-link>
 
 				<el-submenu index="7">
 					<template slot="title">
-						<i class="el-icon-menu"></i>
+						<svg-icon  name="chart" class="svgIcon"></svg-icon>
 						<span>图表</span>
 					</template>
 					<router-link to="/chart">
@@ -75,9 +75,9 @@
 							<span>图表1</span>
 						</el-menu-item>
 					</router-link>
-					<router-link to="/">
+					<router-link to="">
 						<el-menu-item index="7-2">
-							<span>图表2</span>
+							<span>table</span>
 						</el-menu-item>
 					</router-link>
 					<router-link to="/">
@@ -85,15 +85,20 @@
 							<span>图表3</span>
 						</el-menu-item>
 					</router-link>
-
 				</el-submenu>
+				<router-link to="/table">
+					<el-menu-item index="8">
+						<svg-icon  name="table" class="svgIcon"></svg-icon>
+						<span>table</span>
+					</el-menu-item>
+				</router-link>
 			</el-menu>
 		</ul>
 	</div>
 </template>
 
 <style type="text/css">
-	.el-submenu .el-menu-item{
+	.el-submenu .el-menu-item,.el-menu{
 		min-width:178px !important;
 	}
 	.side-wrapper{
@@ -142,13 +147,17 @@
 		top:0;
 		right:5px;
 	}
+	.ul-wrapper .svgIcon{
+		width:20px;
+		height:20px;
+	}
 </style>
 <script type="text/javascript">
 	export default{
 		name:'SideBar',
 		data(){
 			return {
-
+				uniqueOpened:true
 			}
 		},
 		methods:{
