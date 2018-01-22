@@ -27,7 +27,7 @@
 <script type="text/javascript">
 	export default{
 		name:'login',
-		data(){
+		data(){	
 			//用户名规则校验
 			//密码规则校验
 			return {
@@ -35,15 +35,31 @@
 				password:''
 			}
 		},
+		created(){
+			localStorage.setItem('username', 'admin');
+			localStorage.setItem('password', 'admin');	
+		},
 		methods:{ 
 			login(){
-				//调用加载动画模拟后台数据校验
-					
-				//编程式实现路由跳转
-				this.$router.push({
-					path:'/homePage'
-				});
-				console.log('用户名为:'+this.username+" 密码为:"+this.password);
+				//登录校验
+				if (this.username === localStorage.getItem('username') && this.password === localStorage.getItem('password')) {
+					this.$message({
+						message:'登录成功',
+						type:'success',
+						duration:1500
+					});
+					//编程式实现路由跳转
+					this.$router.push({
+						path:'/layout/homePage'
+					});							
+				} else {
+					this.$message({	
+						message:'用户名或密码错误!',
+						type:'error',
+						duration:2000,
+						showClose:true
+					});							
+				}				
 			}
 		}
 	}
