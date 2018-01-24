@@ -23,6 +23,18 @@ html,body{
   font-size:14px;
 }
 
+  /*清除a的默认样式*/
+  
+  a{
+    color:#fff;
+    text-decoration: none;
+  }
+  ul{
+    list-style-type:none;
+    padding:0;
+    margin:0;
+  }
+
 button:focus{
   outline:none;
 }
