@@ -77,6 +77,7 @@
 	let echarts = require('echarts');
 
 	export default{
+		name:'homepage',
 		data(){
 			return {
 
