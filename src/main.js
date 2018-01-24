@@ -3,6 +3,7 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
+import Vuex from 'vuex'
 
 //引入vue-resource
 import Resource from 'vue-resource'
@@ -15,11 +16,14 @@ import Icon from 'vue-svg-icon/Icon.vue'
 //全局引入element-UI
 import ElementUI from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'
-Vue.use(ElementUI);
+//vue.use对组件进行注册
+Vue.use(ElementUI); 
 
 Vue.use(Resource);
 
 Vue.component('svg-icon', Icon);
+
+Vue.use(Vuex);
 
 //生产环境的提示
 Vue.config.productionTip = false
