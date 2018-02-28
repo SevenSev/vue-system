@@ -183,29 +183,16 @@
 </script>
 
 <style type="text/css">
-	.homepage-container{
-		width:100%;
-		height:100%;
-	}
-	.main-wrapper{
-		width:auto;
-		height:100%;
-		margin-left:180px;
-	}	
-	.mainContainer{
-		width:auto;
-		padding:25px;
-		background-color:#f0f2f5;
-	}
 	.bannerItem{
-		margin:18px -20px 30px -20px;
+		margin:18px -5px 30px -20px;
 	}
 	.bannerItem ul > li {
 		display:inline-block;
 		padding-left:20px;
+		width:23%;
 	}
 	.card-panel{
-		width:265px;
+		width:100%;
 		height:108px;
 		background-color:#fff;
 		margin-right:20px;	
