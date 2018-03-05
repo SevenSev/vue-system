@@ -1,6 +1,7 @@
 # vue-system
 There is a system that is based on Vue.js and element-UI.
-It shows you common features and components on website.
+
+It showed you common features and components on website.
 
 technology stack:
 Vue+ES6/5+Mock+webpack+gulp
