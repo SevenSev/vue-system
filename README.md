@@ -1,8 +1,10 @@
 # vue-system
-background management system with Vue.
+There is a system that is based on Vue.js and element-UI.
+
+It showed you common features and components on website.
 
 technology stack:
-Vue+ES6/5+mock+webpack+gulp
+Vue+ES6/5+Mock+webpack+gulp
 
 # How to use
 
@@ -12,7 +14,7 @@ npm install
 
 npm/cnpm run dev
 
-#Account
+# Login information
 
 username:admin
 
