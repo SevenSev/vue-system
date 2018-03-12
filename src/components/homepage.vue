@@ -175,7 +175,7 @@
 				}
 			}
 		},
-		//DOM生成后调用
+		//实例挂载到DOM上之后调用
 		mounted(){
 			this.createChart();
 		}
@@ -190,7 +190,7 @@
 		display:inline-block;
 		padding-left:20px;
 		width:23%;
-	}
+	} 
 	.card-panel{
 		width:100%;
 		height:108px;
