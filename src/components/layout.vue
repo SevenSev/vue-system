@@ -9,7 +9,7 @@
 			<nav-bar></nav-bar>
 			<!-- 主内容区 -->
 			<div class="mainContainer">
-				<!-- 嵌套组件处 -->
+				<!-- 嵌套子路由 -->
 				<router-view></router-view>
 			</div>
 		</div>
