@@ -105,7 +105,7 @@
 		width:178px;
 		height:100%;
 		background:#304156;
-		position:absolute;
+		position:fixed;
 		top:0;
 		left:0;
 		z-index:1001;
