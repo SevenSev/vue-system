@@ -1,6 +1,4 @@
-
 <!-- 导航条 -->
-
 <template>
 	<div class="navBar">
 		<div class="leftNav">
@@ -26,7 +24,7 @@
 					</span>	
 					<el-dropdown-menu slot="dropdown">
 						<el-dropdown-item>
-							<span>首页</span>
+							<span @click="backToHomePage">首页</span>
 						</el-dropdown-item>
 
 						<a  class="itemAddress" href="https://github.com/MagicHacker/vue-system" target="_blank" >
@@ -63,6 +61,11 @@
 		      		this.$router.push({
 		      			path:'/'
 		      		});
+		      },
+		      backToHomePage(){
+		      	this.$router.push({
+		      		path:'/layout/homepage'
+		      	});
 		      }
 		}
 	}
