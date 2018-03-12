@@ -35,6 +35,7 @@
 				password:''
 			}
 		},
+		//创建Vue实例之后触发
 		created(){
 			localStorage.setItem('username', 'admin');
 			localStorage.setItem('password', 'admin');	
