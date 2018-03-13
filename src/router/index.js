@@ -22,7 +22,7 @@ import Form from '@/components/form'
 import Component from '@/components/component'
 
 //zip页
-import Zip from '@/components/zip' 
+import Monitor from '@/components/monitor' 
 
 //柱状图
 import Bar from '@/components/bar'
@@ -85,11 +85,11 @@ export default new Router({
         name:'Component',
         component:Component
       },
-      //zip页
+      //管理页
       {
-        path:'zip',
-        name:'Zip',
-        component:Zip
+        path:'monitor',
+        name:'Monitor',
+        component:Monitor
       },
       //柱状图
       {
