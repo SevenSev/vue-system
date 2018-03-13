@@ -57,13 +57,6 @@
 						<span>图标</span>
 					</el-menu-item>
 				</router-link>
-				
-				<router-link to="/layout/zip">
-					<el-menu-item index="6">
-						<svg-icon  name="zip" class="svgIcon"></svg-icon>
-						<span>ZIP</span>
-					</el-menu-item>
-				</router-link>
 
 				<el-submenu index="7">
 					<template slot="title">
@@ -92,6 +85,13 @@
 						<span>table</span>
 					</el-menu-item>
 				</router-link>
+
+				<router-link to="/layout/monitor">
+					<el-menu-item index="6">
+						<svg-icon  name="monitor" class="svgIcon"></svg-icon>
+						<span>系统管理</span>
+					</el-menu-item>
+				</router-link>				
 			</el-menu>
 		</ul>
 	</div>
