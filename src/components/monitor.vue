@@ -1,6 +1,6 @@
 <!-- zip页 -->
 <template>
-    <div>管理页</div>
+    <div>用户管理页</div>
 </template>
 
 <script type="text/javascript"></script>
