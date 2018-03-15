@@ -7,10 +7,16 @@
                     <el-card :body-style="{padding:'0px'}">
                             <img src="../images/html.jpg">
                             <div class="card-message">
-                                <span>html</span>
-                                <a href="http://www.w3school.com.cn/html/index.asp" target="_blank">
-                                    <span>详情</span>
-                                </a>
+                                <el-row>
+                                    <el-col :span="10" :offset="2">
+                                       <span>html</span> 
+                                    </el-col>
+                                    <el-col :span="5" :offset="7">
+                                        <a href="http://www.w3school.com.cn/html/index.asp" target="_blank">
+                                            <span class="detail">详情</span>
+                                        </a>                                       
+                                    </el-col>
+                                </el-row>                                
                             </div>                       
                     </el-card>
                 </el-col>
@@ -18,10 +24,17 @@
                     <el-card :body-style="{padding:'0px'}">
                             <img src="../images/css.jpg">
                             <div class="card-message">
-                                <span>css</span>
-                                <a href="http://www.w3school.com.cn/css/index.asp" target="_blank">                               
-                                    <span>详情</span>
-                                </a>
+                                <el-row>
+                                    <el-col :span="10" :offset="2">
+                                        <span>css</span>   
+                                    </el-col>
+                                    <el-col :span="5" :offset="7">
+                                        <a href="http://www.w3school.com.cn/css/index.asp" target="_blank">                
+                                            <span class="detail">详情</span>
+                                        </a>                                        
+                                    </el-col>
+                                </el-row>
+
                             </div>                           
                     </el-card>
                 </el-col>
@@ -29,10 +42,16 @@
                     <el-card :body-style="{padding:'0px'}">                       
                             <img src="../images/JavaScript.jpg">
                             <div class="card-message">
-                                <span>JavaScript</span>
-                                <a href="http://www.w3school.com.cn/js/" target="_blank">
-                                    <span>详情</span>
-                                </a> 
+                                <el-row>
+                                    <el-col :span="10" :offset="2">
+                                      <span>JavaScript</span>  
+                                    </el-col>
+                                    <el-col :span="5" :offset="7">
+                                    <a href="http://www.w3school.com.cn/js/" target="_blank">
+                                        <span class="detail">详情</span>
+                                    </a>                                        
+                                    </el-col>
+                                </el-row>
                             </div>                      
                     </el-card>
                 </el-col>
@@ -40,10 +59,16 @@
                     <el-card :body-style="{padding:'0px'}">                     
                             <img src="../images/bootstrap.jpg">
                             <div class="card-message">
-                                <span>BootStrap</span>
-                                 <a href="http://www.bootcss.com/" target="_blank">
-                                    <span>详情</span>
-                                 </a>  
+                                <el-row>
+                                    <el-col :span="10" :offset="2">
+                                       <span>BootStrap</span> 
+                                    </el-col>
+                                    <el-col :span="5" :offset="7">
+                                         <a href="http://www.bootcss.com/" target="_blank">
+                                            <span class="detail">详情</span>
+                                         </a>                                        
+                                    </el-col>
+                                </el-row>
                             </div>                      
                     </el-card>
                 </el-col>
@@ -53,10 +78,16 @@
                     <el-card :body-style="{padding:'0px'}">                       
                             <img src="../images/angular.jpg">
                             <div class="card-message">
-                                <span>Angular</span>
-                                <a href="http://www.angularjs.net.cn/" target="_blank">
-                                    <span>详情</span>
-                                 </a>   
+                                <el-row>
+                                    <el-col :span="10" :offset="2">
+                                       <span>Angular</span> 
+                                    </el-col>
+                                    <el-col :span="5" :offset="7">
+                                        <a href="http://www.angularjs.net.cn/" target="_blank">
+                                            <span class="detail">详情</span>
+                                        </a>                                        
+                                    </el-col>
+                                </el-row>
                             </div>                     
                     </el-card>
                 </el-col>
@@ -64,10 +95,16 @@
                     <el-card :body-style="{padding:'0px'}">                       
                             <img src="../images/vue.jpeg">
                             <div class="card-message">
-                                <span>Vue</span>
-                                <a href="https://cn.vuejs.org/" target="_blank">
-                                    <span>详情</span>
-                                </a>
+                                <el-row>
+                                    <el-col :span="10" :offset="2">
+                                        <span>Vue</span>
+                                    </el-col>
+                                    <el-col :span="5" :offset="7">
+                                        <a href="https://cn.vuejs.org/" target="_blank">
+                                            <span class="detail">详情</span>
+                                        </a>                                        
+                                    </el-col>
+                                </el-row>
                             </div>                       
                     </el-card>
                 </el-col>
@@ -75,10 +112,16 @@
                     <el-card :body-style="{padding:'0px'}">                     
                             <img src="../images/layui.png">
                             <div class="card-message">
-                                <span>Layui</span>
-                                <a href="http://www.layui.com/" target="_blank">
-                                    <span>详情</span>
-                                 </a>   
+                                <el-row>
+                                    <el-col :span="10" :offset="2">
+                                      <span>Layui</span>  
+                                    </el-col>
+                                    <el-col :span="5" :offset="7">
+                                        <a href="http://www.layui.com/" target="_blank">
+                                            <span class="detail">详情</span>
+                                        </a>                                         
+                                    </el-col>
+                                </el-row>
                             </div>                       
                     </el-card>
                 </el-col>
@@ -87,10 +130,16 @@
                     <el-card :body-style="{padding:'0px'}">                     
                            <img src="../images/echarts.jpg">
                            <div class="card-message">
-                               <span>Echarts</span>
-                               <a href="http://echarts.baidu.com/" target="_blank">
-                                    <span>详情</span>
-                                </a>
+                            <el-row>
+                                <el-col :span="10" :offset="2">
+                                   <span>Echarts</span> 
+                                </el-col>
+                                <el-col :span="5" :offset="7">
+                                    <a href="http://echarts.baidu.com/" target="_blank">
+                                        <span class="detail">详情</span>
+                                    </a>                                    
+                                </el-col>
+                            </el-row>
                            </div>                      
                     </el-card>
                 </el-col> 
@@ -101,10 +150,16 @@
                     <el-card :body-style="{padding:'0px'}">                      
                             <img src="../images/es6.jpg">
                             <div class="card-message">
-                                <span>ES6</span>
-                                <a href="http://es6.ruanyifeng.com/#README" target="_blank">
-                                    <span>详情</span>
-                                 </a>   
+                                <el-row>
+                                    <el-col :span="10" :offset="2">
+                                        <span>ES6</span>
+                                    </el-col>
+                                    <el-col :span="5" :offset="7">
+                                       <a href="http://es6.ruanyifeng.com/#README" target="_blank">
+                                            <span class="detail">详情</span>
+                                       </a> 
+                                    </el-col>
+                                </el-row>
                             </div>                       
                     </el-card>
                 </el-col>
@@ -112,10 +167,16 @@
                     <el-card :body-style="{padding:'0px'}">                     
                             <img src="../images/gulp.jpg">
                             <div class="card-message">
-                                <span>Gulp</span>
-                                <a href="https://www.gulpjs.com.cn/" target="_blank">
-                                    <span>详情</span>
-                                 </a>   
+                                <el-row>
+                                    <el-col :span="10" :offset="2">
+                                        <span>Gulp</span>                                        
+                                    </el-col>
+                                    <el-col :span="5" :offset="7">
+                                        <a href="https://www.gulpjs.com.cn/" target="_blank">
+                                            <span class="detail">详情</span>
+                                        </a>                                        
+                                    </el-col>
+                                </el-row>   
                             </div>                                               
                     </el-card>
                 </el-col>
@@ -123,10 +184,16 @@
                     <el-card :body-style="{padding:'0px'}">                        
                             <img src="../images/webpack.png">
                             <div class="card-message">
-                                <span>Webpack</span>
-                                <a href="https://doc.webpack-china.org/" target="_blank">
-                                    <span>详情</span>
-                                 </a>    
+                                <el-row>
+                                    <el-col :span="10" :offset="2">
+                                        <span>Webpack</span>                                        
+                                    </el-col>
+                                    <el-col :span="5" :offset="7">
+                                         <a href="https://doc.webpack-china.org/" target="_blank">
+                                            <span class="detail">详情</span>
+                                         </a>       
+                                    </el-col>
+                                </el-row>
                             </div>                                               
                     </el-card>
                 </el-col>
@@ -134,10 +201,16 @@
                     <el-card :body-style="{padding:'0px'}">                        
                             <img src="../images/node.png">
                             <div class="card-message">
-                                <span>Node</span>
-                                <a href="http://nodejs.cn/" target="_blank">
-                                    <span>详情</span>
-                                 </a>   
+                                <el-row>
+                                    <el-col :span="10" :offset="2">
+                                        <span>Node</span>                                        
+                                    </el-col>
+                                    <el-col :span="5" :offset="7">
+                                        <a href="http://nodejs.cn/" target="_blank">
+                                            <span class="detail">详情</span>
+                                        </a>                                         
+                                    </el-col>
+                                </el-row>  
                             </div>                       
                     </el-card>
                 </el-col>
@@ -162,7 +235,7 @@
 </script>
 
 <style type="text/css">
-    .el-row{
+    div.content-wrapper > .el-row{
         margin-bottom:10px;
     }
 
@@ -186,7 +259,7 @@
         width:200px;
     }
 
-    div.card-message > a > span:hover{
+   span.detail:hover{
         cursor:pointer;
         color:#f56c6c;
     }
