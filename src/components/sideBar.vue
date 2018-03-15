@@ -58,7 +58,7 @@
 					</el-menu-item>
 				</router-link>
 
-				<el-submenu index="7">
+				<el-submenu index="6">
 					<template slot="title">
 						<svg-icon  name="chart" class="svgIcon"></svg-icon>
 						<span>图表</span>
@@ -80,18 +80,28 @@
 					</router-link>
 				</el-submenu>
 				<router-link to="/layout/table">
-					<el-menu-item index="8">
+					<el-menu-item index="7">
 						<svg-icon  name="table" class="svgIcon"></svg-icon>
 						<span>table</span>
 					</el-menu-item>
 				</router-link>
-
-				<router-link to="/layout/monitor">
-					<el-menu-item index="6">
+				
+				<el-submenu index="8">
+					<template slot="title">
 						<svg-icon  name="monitor" class="svgIcon"></svg-icon>
-						<span>系统管理</span>
-					</el-menu-item>
-				</router-link>				
+						<span>系统管理</span>						
+					</template>
+					<router-link to="/layout/monitor">
+						<el-menu-item index="8-1">
+							<span>用户管理</span>
+						</el-menu-item>
+					</router-link>
+					<router-link to="/layout/authority">
+						<el-menu-item index="8-2">
+							<span>权限管理</span>
+						</el-menu-item>
+					</router-link>
+				</el-submenu>			
 			</el-menu>
 		</ul>
 	</div>
