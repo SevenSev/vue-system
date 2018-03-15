@@ -44,14 +44,14 @@
 			login(){
 				//登录校验
 				//空的校验
-				if(this.username === "" || this.password === ""){
+				if (this.username === "" || this.password === ""){
 					this.$message({	
 						message:'用户名或密码不能为空!',
 						type:'error',
 						duration:2000,
 						showClose:true
 					});	
-				}else if (this.username === localStorage.getItem('username') && this.password === localStorage.getItem('password')) {
+				} else if (this.username === localStorage.getItem('username') && this.password === localStorage.getItem('password')) {
 					this.$message({
 						message:'登录成功',
 						type:'success',
