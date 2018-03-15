@@ -21,7 +21,7 @@ import Form from '@/components/form'
 //组件页
 import Component from '@/components/component'
 
-//zip页
+//用户管理
 import Monitor from '@/components/monitor' 
 
 //柱状图
@@ -35,6 +35,9 @@ import Pie from '@/components/pie'
 
 //table页
 import Table from '@/components/table'
+
+//权限管理
+import Authority from '@/components/authority'
 //创建配置文件管理组件的引入
 
 Vue.use(Router)
@@ -85,11 +88,17 @@ export default new Router({
         name:'Component',
         component:Component
       },
-      //管理页
+      //用户管理
       {
         path:'monitor',
         name:'Monitor',
         component:Monitor
+      },
+      //权限管理
+      {
+        path:'authority',
+        name:'Authority',
+        component:Authority
       },
       //柱状图
       {
